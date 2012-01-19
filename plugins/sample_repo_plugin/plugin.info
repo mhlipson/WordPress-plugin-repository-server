@@ -1,0 +1,10 @@
+{
+	"version":".9",
+	
+	"description":"This is a sample plugin which interacts with the plugin repository server. It's still in testing, but should be completed soon.",
+
+	"change_log":[
+		"Fixed eval code",
+		"Single file to include",
+	]
+}

@@ -1,0 +1,20 @@
+A WordPress plugin repository server using Amazon S3.
+
+Version: 0.1
+
+I wanted a plugin repository to update unreleased plugins that some friends/colleagues were testing.  Instead of having to contact them every time I needed to push an update, I thought it would be best to write a dynamic application that would allow me to push notify the testers when an update was live. Since I couldn’t find a reasonable solution out there, I threw this small application together to just handle the basics. 
+
+I would not recommend this over the repository at WordPress.org.
+
+Plugin setup: 
+1. Copy 'plugin.repo.php' and 'plugin.info' to your plugin
+2. Modify the JSON in 'plugin.info' to reflect your plugin
+3. Copy your plugin to the 'plugins' directory.
+
+Server set up:
+1. Rename 'temp-base.inc.php' to 'base.inc.php'
+2. Add AWS information to 'base.inc.php'
+3. Start a cron on cron.script.php 
+4. Point the sub domain to the 'web' directory
+
+
